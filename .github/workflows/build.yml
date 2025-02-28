@@ -52,7 +52,7 @@ jobs:
       - name: Build and push Ollama images
         uses: docker/build-push-action@v6
         with:
-          build_args: |
+          build-args: |
             OLLAMA_VERSION=${{ matrix.Ollama }}
             MODELS=${{ matrix.Models }}
           push: true
