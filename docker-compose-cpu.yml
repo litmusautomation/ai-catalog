@@ -1,0 +1,15 @@
+# CPU only sample application
+version: "3.9"
+services:
+  ollama:
+    image: ghcr.io/litmusautomation/litmus-ollama-deepseek:latest
+    container_name: deepseek-cpu
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama:
+ 
