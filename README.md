@@ -43,7 +43,7 @@ strategy:
 ---
 
 ## How It Works
-1. **GitHub Actions** automatically builds images when `config.yaml` is updated.
+1. **GitHub Actions** automatically builds images when commits are pushed to main.
 2. Images are pushed to **GitHub Container Registry (GHCR)**.
 3. Anyone can pull and run the containers.
 
@@ -88,7 +88,7 @@ docker-compose -f docker-compose.gpu.yml up -d
 ```
 
 ## License
-
+g
 Copyright (c) Litmus Automation Inc.
 
 
