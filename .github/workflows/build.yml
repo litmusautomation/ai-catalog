@@ -58,6 +58,4 @@ jobs:
             MODELS=${{ matrix.Models }}
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/${{ matrix.ImageName }}
-            ghcr.io/${{ github.repository }}/${{ matrix.ImageName }}:${{ github.sha }}
-            ghcr.io/${{ github.repository }}/${{ matrix.ImageName }}:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}/${{ matrix.ImageName }}:latest
