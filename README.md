@@ -61,17 +61,17 @@ To build and push images manually (if needed):
 ## Pulling & Running Containers
 ### **1️⃣ Pull from GitHub Container Registry**
 ```bash
-docker pull ghcr.io/litmusautomation/litmus-ollama-deepseek:latest
+docker pull ghcr.io/litmusautomation/ai-catalog/litmus-ollama-deepseek:latest
 ```
 
 ### **2️⃣ Run in CPU Mode**
 ```bash
-docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ghcr.io/litmusautomation/litmus-ollama-deepseek:latest
+docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ghcr.io/litmusautomation/ai-catalog/litmus-ollama-deepseek:latest
 ```
 
 ### **3️⃣ Run in GPU Mode**
 ```bash
-docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ghcr.io/litmusautomation/litmus-ollama-llama3:latest
+docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ghcr.io/litmusautomation/ai-catalog/litmus-ollama-llama3:latest
 ```
 
 ---
