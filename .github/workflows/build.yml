@@ -53,7 +53,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           build_args: |
-            --build-arg OLLAMA_VERSION=${{ matrix.Ollama }}
-            --build-arg MODELS=${{ matrix.Models }}
+            OLLAMA_VERSION=${{ matrix.Ollama }}
+            MODELS=${{ matrix.Models }}
           push: true
           tags: ghcr.io/litmusautomation/ai-catalog/${{ matrix.ImageName }}:${{ matrix.Ollama }}
