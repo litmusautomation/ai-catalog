@@ -56,4 +56,4 @@ jobs:
             --build-arg OLLAMA_VERSION=${{ matrix.Ollama }}
             --build-arg MODELS=${{ matrix.Models }}
           push: true
-          tags: ghcr.io/${{ github.repository }}/${{ matrix.ImageName }}:${{ matrix.Ollama }}
+          tags: ghcr.io/litmusautomation/ai-catalog/${{ matrix.ImageName }}:${{ matrix.Ollama }}
