@@ -88,7 +88,7 @@ docker-compose -f docker-compose.gpu.yml up -d
 ```
 
 ## License
-g
+
 Copyright (c) Litmus Automation Inc.
 
 
