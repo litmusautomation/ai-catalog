@@ -19,23 +19,26 @@ jobs:
       matrix:
         include:
           - ImageName: litmus-ollama-deepseek
-            Ollama: 0.5.13
+            Ollama: 0.6.0
             Models: deepseek-r1:1.5b
           - ImageName: litmus-ollama-llama3
-            Ollama: 0.5.13
+            Ollama: 0.6.0
             Models: llama3.2:1b
           - ImageName: litmus-ollama-qwen25
-            Ollama: 0.5.13
+            Ollama: 0.6.0
             Models: qwen2.5:1.5b qwen2.5-coder:0.5b
           - ImageName: litmus-ollama-gemma2
-            Ollama: 0.5.13
+            Ollama: 0.6.0
             Models: gemma2:2b
           - ImageName: litmus-ollama-phi3
-            Ollama: 0.5.13
+            Ollama: 0.6.0
             Models: phi3:3.8b
           - ImageName: litmus-ollama-phi4
-            Ollama: 0.5.13
+            Ollama: 0.6.0
             Models: phi4-mini:3.8b
+          - ImageName: litmus-ollama-gemma3
+            Ollama: 0.6.0
+            Models: gemma3:4b
 
     steps:
       - name: Checkout repository
